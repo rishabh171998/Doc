@@ -12,7 +12,7 @@ script:
 after_success:
   - docker build -t ei5688/multi-client ./client
   - docker build -t ei5688/multi-nginx ./ngnix
-  - docker build -t ei5688/multi-server- ./server
+  - docker build -t ei5688/multi-server ./server
   - docker build -t ei5688/multi-worker ./worker
   #LOGIN TO DOCKER 
   - echo "$DOCK_PASSWORD" | docker login -u "$DOCK_ID" --password-stdin
