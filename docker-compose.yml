@@ -13,7 +13,7 @@ services:
       - REDIS_PORT= 6379
       - PGUSER= postgres
       - PGHOST= database-1.cdlafyhvyffb.us-east-2.rds.amazonaws.com
-      - PGDATABASE= fibvalue
+      - PGDATABASE= database-1
       - PGPASSWORD= post123456
       - PGPORT=5432
   worker:
